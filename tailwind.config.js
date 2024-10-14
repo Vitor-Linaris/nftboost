@@ -1,23 +1,27 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: ["class"],
-    content: [
+  darkMode: ["class"],
+  content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  	extend: {
-  		colors: {
-  			background: 'var(--background)',
-  			foreground: 'var(--foreground)'
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+    extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        poppins: ["var(--font-poppins)"],
+      },
+      colors: {
+        "blue-primary": "#1D4FFE",
+        "green-primary": "#4BCE97",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+    },
   },
   plugins: [require("tailwindcss-animate")],
 };
