@@ -16,10 +16,8 @@ module.exports = {
         "blue-primary": "#1D4FFE",
         "green-primary": "#4BCE97",
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      maxWidth: {
+        grid: "77.5rem",
       },
     },
   },
