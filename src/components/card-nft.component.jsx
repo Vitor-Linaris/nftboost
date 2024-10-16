@@ -6,12 +6,12 @@ import IconVerify from "@/assets/verify.svg";
 import IconETH from "@/assets/icon-eth.svg";
 import IconClock from "@/assets/icon-clock.svg";
 
-export function CardNFT() {
+export function CardNFT({ thumbnail, name, value, value_brl }) {
   return (
-    <div className="w-full max-w-card-nft overflow-hidden rounded-2xl border border-gray-border-card">
+    <div className="w-full max-w-card-nft overflow-hidden rounded-2xl border border-gray-border-card bg-gray-area-favorite">
       <div className="relative w-full h-area-image-nft overflow-hidden">
         <Image
-          src={ImageNft01}
+          src={thumbnail}
           alt="Nft 01"
           className="w-full h-full object-cover"
         />
@@ -25,7 +25,7 @@ export function CardNFT() {
           Cartoon Collection
           <Image src={IconVerify} alt="Icon Verify" />
         </h4>
-        <h3 className="text-lg font-semibold mb-4">Cat #221</h3>
+        <h3 className="text-lg/none font-semibold mb-4">{name}</h3>
 
         <div className="flex items-end justify-between mb-4">
           <div className="space-y-1">
@@ -33,10 +33,12 @@ export function CardNFT() {
               Preço atual
             </span>
             <h3 className="flex items-center gap-1 text-lg font-semibold">
-              <Image src={IconETH} alt="Icon ETH" /> 0.0721 BTC
+              <Image src={IconETH} alt="Icon ETH" /> {value} BTC
             </h3>
           </div>
-          <h5 className="relative bottom-1 text-xs font-medium">R$602,02</h5>
+          <h5 className="relative bottom-1 text-xs font-medium">
+            R${value_brl}
+          </h5>
         </div>
 
         <button className="w-full py-4 bg-blue-primary rounded-full mb-4 text-sm font-semibold hover:bg-blue-700 transition-all ease-linear">
