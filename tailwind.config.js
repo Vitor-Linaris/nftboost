@@ -15,9 +15,15 @@ module.exports = {
       colors: {
         "blue-primary": "#1D4FFE",
         "green-primary": "#4BCE97",
+        "gray-border-card": "#131317",
+        "gray-area-favorite": "#05030A",
       },
       maxWidth: {
         grid: "77.5rem",
+        "card-nft": "17.4375rem",
+      },
+      height: {
+        "area-image-nft": "14.7rem",
       },
     },
   },
