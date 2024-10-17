@@ -4,7 +4,7 @@ import IconVerify from "@/assets/verify.svg";
 import ImgNFT from "@/assets/img-neft/01.jpg";
 import IconETH from "@/assets/icon-eth.svg";
 
-export function CardCollectors() {
+export function CardCollectors({ image, name, value_btc, percent }) {
   return (
     <div className="bg-white bg-opacity-[0.01] py-4 px-6 flex items-center justify-between rounded-full border border-white border-opacity-5 w-full max-w-card-collector">
       <div className="flex items-center gap-6">
@@ -13,7 +13,7 @@ export function CardCollectors() {
           <div className="relative w-10 h-10">
             <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center border-2 border-white border-opacity-5">
               <Image
-                src={ImgNFT}
+                src={image}
                 alt="Image NFT"
                 className="w-full h-full  object-cover"
               />
@@ -25,20 +25,20 @@ export function CardCollectors() {
             />
           </div>
           <div className="space-y-1">
-            <strong>Lorem Ipsum</strong>
+            <h4>{name}</h4>
             <p className="flex items-center gap-1 text-sm text-white text-opacity-70">
               Preço mínimo
               <span className="flex items-center gap-1 font-semibold text-sm">
-                <Image src={IconETH} alt="Etherium" /> 0.721 BTC
+                <Image src={IconETH} alt="Etherium" /> {value_btc} BTC
               </span>
             </p>
           </div>
         </div>
       </div>
       <div className="space-y-1 text-right">
-        <strong className="text-green-primary font-bold">+20%</strong>
+        <strong className="text-green-primary font-bold">{[percent]}</strong>
         <span className="flex items-center gap-1 font-semibold text-sm">
-          <Image src={IconETH} alt="Etherium" /> 0.721 BTC
+          <Image src={IconETH} alt="Etherium" /> {value_btc} BTC
         </span>
       </div>
     </div>
