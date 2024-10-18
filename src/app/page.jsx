@@ -1,10 +1,6 @@
-import { CardNFT } from "@/components/card-nft.component";
+import { CardCollectors } from "@/components/card-collectors.component";
 import { ContainerGrid } from "@/components/container.component";
 
 export default function Home() {
-  return (
-    <ContainerGrid>
-      <CardNFT />
-    </ContainerGrid>
-  );
+  return <ContainerGrid>Home</ContainerGrid>;
 }

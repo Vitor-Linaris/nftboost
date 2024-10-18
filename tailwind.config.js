@@ -22,10 +22,22 @@ module.exports = {
         grid: "77.5rem",
         "card-nft": "17.4375rem",
         "card-collector": "37rem",
+        "logo-size-mb": "10rem",
+        "nav-header": "48.3rem",
       },
       height: {
         "area-image-nft": "14.7rem",
       },
+    },
+    screens: {
+      "@tablet": "640px",
+      // => @media (min-width: 640px) { ... }
+
+      "@laptop": "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      "@desktop": "1280px",
+      // => @media (min-width: 1280px) { ... }
     },
   },
   plugins: [require("tailwindcss-animate")],
