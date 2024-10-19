@@ -24,9 +24,15 @@ module.exports = {
         "card-collector": "37rem",
         "logo-size-mb": "10rem",
         "nav-header": "48.3rem",
+        "left-cont-footer": "20.25rem",
+        "content-desc-hero": "41.1rem",
+      },
+      width: {
+        "area-cards-mobile": "43.75rem",
       },
       height: {
         "area-image-nft": "14.7rem",
+        "area-cards-mobile": "15.3rem",
       },
     },
     screens: {
@@ -38,6 +44,9 @@ module.exports = {
 
       "@desktop": "1280px",
       // => @media (min-width: 1280px) { ... }
+    },
+    backgroundImage: {
+      "hero-pattern": "url('../assets/bg-hero.svg')",
     },
   },
   plugins: [require("tailwindcss-animate")],

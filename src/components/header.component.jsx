@@ -10,7 +10,7 @@ const itemsNav = ["Download", "NFTs", "Rank", "FAQ"];
 
 export function Header() {
   return (
-    <header className="py-6 @laptop:py-5">
+    <header className="absolute top-0 left-0 py-6 w-full @laptop:py-5">
       <ContainerGrid className="flex items-center justify-between">
         <Image src={Logo} alt="Logo NFTBoost" className="max-w-logo-size-mb" />
         <div className="hidden @laptop:flex flex-1 max-w-nav-header items-center justify-between">

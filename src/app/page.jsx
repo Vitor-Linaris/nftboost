@@ -1,6 +1,5 @@
-import { CardCollectors } from "@/components/card-collectors.component";
-import { ContainerGrid } from "@/components/container.component";
+import { SectionHero } from "@/components/section-hero/section-hero.component";
 
 export default function Home() {
-  return <ContainerGrid>Home</ContainerGrid>;
+  return <SectionHero />;
 }
