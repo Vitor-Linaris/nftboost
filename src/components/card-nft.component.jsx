@@ -6,7 +6,7 @@ import IconVerify from "@/assets/verify.svg";
 import IconETH from "@/assets/icon-eth.svg";
 import IconClock from "@/assets/icon-clock.svg";
 
-export function CardNFT({ thumbnail, name, value, value_brl }) {
+export function CardsNFT({ thumbnail, name, value, value_brl }) {
   return (
     <div className="w-full max-w-card-nft overflow-hidden rounded-2xl border border-gray-border-card bg-gray-area-favorite">
       <div className="relative w-full h-area-image-nft overflow-hidden">
