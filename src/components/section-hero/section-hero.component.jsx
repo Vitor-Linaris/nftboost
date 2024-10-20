@@ -43,6 +43,7 @@ export function SectionHero() {
           <Image src={AppleStore} alt="AppleStore" />
         </div>
         <CardsHero />
+        <div className="w-full border-t border-white border-opacity-5 mt-10 @desktop:mt-36"></div>
       </ContainerGrid>
     </section>
   );

@@ -33,6 +33,7 @@ module.exports = {
       height: {
         "area-image-nft": "14.7rem",
         "area-cards-mobile": "15.3rem",
+        "area-cards-desk": "26.6rem",
       },
     },
     screens: {
