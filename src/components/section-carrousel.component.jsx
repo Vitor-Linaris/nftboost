@@ -6,7 +6,7 @@ import { TitleSection } from "./title-section.component";
 
 export function SectionCarrousel() {
   return (
-    <section>
+    <section className="py-28">
       <ContainerGrid>
         <TitleSection
           subtitle="Destaque em Coleções"
