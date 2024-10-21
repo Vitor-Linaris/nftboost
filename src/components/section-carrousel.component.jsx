@@ -4,16 +4,13 @@ import { CarrouselCards } from "./carrousel-cards.component";
 import { ContainerGrid } from "./container.component";
 import { TitleSection } from "./title-section.component";
 
-export function SectionCarrousel() {
+export function SectionCarrousel({ subtitle, title, data }) {
   return (
-    <section className="py-28">
-      <ContainerGrid>
-        <TitleSection
-          subtitle="Destaque em Coleções"
-          title="Coleções notáveis"
-        />
+    <section className="py-10 @desktop:py-28">
+      <ContainerGrid className="px-0 @desktop:px-3">
+        <TitleSection subtitle={subtitle} title={title} />
 
-        <CarrouselCards />
+        <CarrouselCards data={data} />
       </ContainerGrid>
     </section>
   );
