@@ -35,6 +35,7 @@ module.exports = {
         "area-image-nft": "14.7rem",
         "area-cards-mobile": "15.3rem",
         "area-cards-desk": "26.6rem",
+        "area-banner": "29.5rem",
       },
     },
     screens: {
@@ -49,6 +50,7 @@ module.exports = {
     },
     backgroundImage: {
       "hero-pattern": "url('../assets/bg-hero.svg')",
+      "banner-hero": "url('../assets/bg-banner.svg')",
     },
   },
   plugins: [require("tailwindcss-animate")],
