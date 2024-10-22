@@ -8,7 +8,6 @@ import "swiper/css";
 
 import { CardsNFT } from "./card-nft.component";
 
-import Thumb01 from "@/assets/img-neft/01.jpg";
 import Arrow from "@/assets/arrow.svg";
 import Image from "next/image";
 

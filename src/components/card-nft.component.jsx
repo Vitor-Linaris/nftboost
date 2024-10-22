@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import ImageNft01 from "@/assets/img-neft/01.jpg";
 import IconHeart from "@/assets/icon-heart.svg";
 import IconVerify from "@/assets/verify.svg";
 import IconETH from "@/assets/icon-eth.svg";

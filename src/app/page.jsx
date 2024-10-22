@@ -33,6 +33,18 @@ const featuredCollections = [
     value: "0.0721",
     value_brl: "602,02",
   },
+  {
+    name: "Cat #221",
+    thumbnail: Thumb04,
+    value: "0.0721",
+    value_brl: "602,02",
+  },
+  {
+    name: "Cat #221",
+    thumbnail: Thumb04,
+    value: "0.0721",
+    value_brl: "602,02",
+  },
 ];
 
 export default function Home() {

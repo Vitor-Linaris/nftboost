@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import IconVerify from "@/assets/verify.svg";
-import ImgNFT from "@/assets/img-neft/01.jpg";
 import IconETH from "@/assets/icon-eth.svg";
 
 export function CardCollectors({ position, image, name, value_btc, percent }) {
