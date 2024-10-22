@@ -5,6 +5,8 @@ import Thumb01 from "@/assets/img-neft/01.jpg";
 import Thumb02 from "@/assets/img-neft/02.jpg";
 import Thumb03 from "@/assets/img-neft/03.jpg";
 import Thumb04 from "@/assets/img-neft/04.jpg";
+import { SectionCollectors } from "@/components/section-collectors";
+import { SectionBanner } from "@/components/section-banner.component";
 
 const featuredCollections = [
   {
@@ -49,11 +51,18 @@ export default function Home() {
         data={featuredCollections}
       />
       <hr className="border-t border-white border-opacity-5 max-w-grid mx-auto" />
+
+      <SectionCollectors />
+
+      <hr className="border-t border-white border-opacity-5 max-w-grid mx-auto" />
+
       <SectionCarrousel
         subtitle="Em Tendência"
         title="Tendência"
         data={featuredCollections}
       />
+
+      <SectionBanner />
     </>
   );
 }
