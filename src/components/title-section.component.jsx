@@ -1,6 +1,6 @@
 export function TitleSection({ subtitle, title }) {
   return (
-    <div className="px-3 @desktop:px-0 mb-12 @desktop:mb-14 space-y-1">
+    <div className="px-3 @desktop:px-0 mb-8 @desktop:mb-14 space-y-1">
       <span className="text-sm @desktop:text-xl font-semibold text-white text-opacity-70">
         {subtitle}
       </span>
