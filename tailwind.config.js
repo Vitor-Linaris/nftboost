@@ -37,20 +37,37 @@ module.exports = {
         "area-cards-desk": "26.6rem",
         "area-banner": "29.5rem",
       },
+      keyframes: {
+        "accordion-down": {
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
+        },
+        "accordion-up": {
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
+          },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
     },
     screens: {
       "@tablet": "640px",
-      // => @media (min-width: 640px) { ... }
-
       "@laptop": "1024px",
-      // => @media (min-width: 1024px) { ... }
-
       "@desktop": "1280px",
-      // => @media (min-width: 1280px) { ... }
     },
     backgroundImage: {
-      "hero-pattern": "url('../assets/bg-hero.svg')",
-      "banner-hero": "url('../assets/bg-banner.svg')",
+      "hero-pattern": 'url("../assets/bg-hero.svg")',
+      "banner-hero": 'url("../assets/bg-banner.svg")',
     },
   },
   plugins: [require("tailwindcss-animate")],

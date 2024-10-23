@@ -7,6 +7,7 @@ import Thumb03 from "@/assets/img-neft/03.jpg";
 import Thumb04 from "@/assets/img-neft/04.jpg";
 import { SectionCollectors } from "@/components/section-collectors";
 import { SectionBanner } from "@/components/section-banner.component";
+import { SectionQuestions } from "@/components/section-questions";
 
 const featuredCollections = [
   {
@@ -75,6 +76,8 @@ export default function Home() {
       />
 
       <SectionBanner />
+
+      <SectionQuestions />
     </>
   );
 }
