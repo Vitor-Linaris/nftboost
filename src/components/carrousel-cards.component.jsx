@@ -1,21 +1,48 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import Image from "next/image";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "swiper/css";
 
 import { CardsNFT } from "./card-nft.component";
 
 import Arrow from "@/assets/arrow.svg";
-import Image from "next/image";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export function CarrouselCards({ data }) {
   const swiperRef = useRef();
+  const areaSlideRef = useRef(null);
+
+  useEffect(() => {
+    const areaSlide = areaSlideRef.current;
+
+    gsap.fromTo(
+      areaSlide,
+      {
+        opacity: 0,
+        y: 50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        ease: "power3.out",
+        duration: 2,
+        scrollTrigger: {
+          trigger: areaSlide,
+          start: "top-=300px center ",
+        },
+      }
+    );
+  });
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative" ref={areaSlideRef}>
       <button
         className="w-12 h-12 bg-blue-primary hover:bg-gray-hover-btn-slide rounded-full hidden @desktop:flex items-center justify-center absolute z-10 top-1/2 -mt-6 -left-6 transition-all ease-linear border border-white border-opacity-5"
         onClick={() => {
