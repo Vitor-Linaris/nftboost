@@ -9,7 +9,7 @@ O **NFTBoost** é um landing Page para venda de produtos digitais na blockchain.
 
 ## 📹 Screenshots
 
-![App Screenshot](./screenshot.png)
+![App Screenshot](./src/assets/nftboost.png)
 
 ## 🚀 Tecnologias Utilizadas
 
