@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![vitor-linaris-repo-status](https://img.shields.io/badge/status-finished-lightgrey?style=for-the-badge&logo=headspace&logoColor=green&color=light)
 
-## Getting Started
+# 🏦 Projeto NFTBoost
 
-First, run the development server:
+Esse projeto **NFTBoost**, é um projeto desenvolvido para praticar Next.js e
+tailwindcss.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+O **NFTBoost** é um landing Page para venda de produtos digitais na blockchain.
+
+## 📹 Screenshots
+
+![App Screenshot](./screenshot.png)
+
+## 🚀 Tecnologias Utilizadas
+
+- React.js
+- Next.js
+- Tailwindcss
+- shadcn
+- Swiper.js
+- Gsap
+
+## 🗓️ Etapas
+
+🗹 Definição da estrutura base e instalação de dependências
+
+🗹 Importação das Imagens e icones
+
+🗹 Importação Cores e Tipografia
+
+🗹 Criação dos components
+
+🗹 Implementação do Header e Footer
+
+🗹 Implementação das dobras (seções)
+
+## Setup
+
+Follow these steps to set up the project:
+
+Clone the project repository using the following command:
+
+```sh
+git clone https://github.com/Vitor-Linaris/nftboost.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to the project's root directory:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+cd nftboost/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install project dependencies by running:
 
-## Learn More
+```sh
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the development server and preview your application, use the following
+command:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sh
+npm run start
+```
 
-## Deploy on Vercel
+### Testing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Run tests by executing the following command:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sh
+npm run test
+```
+
+## Criador & Autor
+
+- [@WillMoreiraDev](https://www.linkedin.com/in/willmoreira/)
+
+- [@Vitor-Linaris](https://www.linkedin.com/in/vitor-linaris-a33a95235/)
+
+## 🔗 Links
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://linaris.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitor-linaris-a33a95235/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/linaris.dev/)
